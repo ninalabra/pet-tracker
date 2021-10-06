@@ -2,17 +2,17 @@ import { Nav, Container, Row, Col } from 'react-bootstrap';
 
 
 export default function Footer() {
-    return(
+    return( 
         <footer className="mt-5 footer">
            <Container fixed="bottom">  
                <Row className="dark">
                    <Col className="mt-3">
-                        <div>
+                        <section>
                             <h5>Stay Connected</h5>
-                        </div>
-                        <div>
+                        </section>
+                        <section>
                             <span>Sign up for our newsletter!</span>
-                        </div>
+                        </section>
                    </Col>
                    <Col className="mt-3">
                         <section>
@@ -35,11 +35,25 @@ export default function Footer() {
                         
                    </Col>
                    <Col className="mt-3">
-                        <div>
+                        <section>
                             <h5>Contact Us</h5>
-                        </div>
+                        </section>
+                        <Container className="text-center">
+                            <Row>
+                                <h6>Hello, this is our address</h6>
+                            </Row>
+                            <Row>
+                                <h6>This is our email.</h6>
+                            </Row>
+                            <Row>
+                                <p>This is our phone number.</p>
+                            </Row>
+                        </Container>
                    </Col>
                </Row>
+               <footer className="p-2 pt-5">
+                    <p className="text-center"><sm>&copy; Copyright 2021</sm></p>
+               </footer>
            </Container>
         </footer>
     )

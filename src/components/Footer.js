@@ -4,7 +4,7 @@ import { Nav, Container, Row, Col } from 'react-bootstrap';
 export default function Footer() {
     return( 
         <footer className="mt-5 footer">
-           <Container fixed="bottom">  
+           <Container fixed="bottom" fluid>  
                <Row className="dark">
                    <Col className="mt-3">
                         <section>

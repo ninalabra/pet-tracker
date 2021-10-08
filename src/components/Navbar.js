@@ -24,8 +24,8 @@ export default function NavBar() {
                     <Nav.Link>Pricing</Nav.Link>
                 </Nav>
                 <Nav id="navbar-btn">
-                    <Button className="mr-2" id="login-btn">Log In</Button>
-                    <Button as="button">Sign Up</Button>
+                    <Button variant="outline-info" className="m-1" id="login-btn">Log In</Button>
+                    <Button variant="outline-info" className="m-1">Sign Up</Button>
                 </Nav>
             </Navbar.Collapse>
         </Navbar>

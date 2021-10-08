@@ -1,5 +1,6 @@
 import Banner from '../components/Banner';
 import PricingCards from '../components/PricingCard';
+import ProductFeatures from '../components/Features';
 import '../App.scss';
 
 export default function Home() {
@@ -11,7 +12,9 @@ export default function Home() {
     return(
         <>
             <Banner BannerProp={bannerData}/>
+            <ProductFeatures/>
             <PricingCards/>
+
         </>
     )
 } 

@@ -7,6 +7,7 @@
 
 .App {
   text-align: center;
+  width: 100vw;
 }
 
 .App-logo {
@@ -45,6 +46,7 @@
 }
 
 .navbar {
+  width: 100vw;
   background-color: #fff;
 }
 
@@ -62,11 +64,27 @@
   text-align: center center;
 }
 
+.feature-description {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 12rem;
+  margin-bottom: 10rem;
+}
+
+.feature-description-2 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 12rem;
+  margin-bottom: 10rem;
+}
+
 .pricing-section {
   width: 100vw;
   align-items: center;
   justify-content: center;
-  margin-left: auto;
+  // margin-left: auto;
 
 }
 

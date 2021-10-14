@@ -2,7 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
 
-const userRoutes = require('./routes/userRoutes');
+// const userRoutes = require('./routes/userRoutes');
 const petRoutes = require('./routes/petRoutes');
 
 const app = express();
@@ -14,13 +14,13 @@ app.use(express.urlencoded({
     extended: true
 }));
 
-app.use('/user', userRoutes);
+// app.use('/user', userRoutes);
 app.use('/pet', petRoutes);
 
-mongoose.connect("", {
-    useNewUrlParser: true,
-    useUnifiedTopology: true
-})
+mongoose.connect("mongodb+srv://admin:admin123@cluster0.qnql0.mongodb.net/pet-tracker?retryWrites=true&w=majority", {
+	useNewUrlParser: true,
+	useUnifiedTopology: true
+}) 
 
 mongoose.connection.once('open', () => {
     console.log("You are now connected to MongoDB Atlas.")

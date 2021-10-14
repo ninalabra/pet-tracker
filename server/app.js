@@ -1,6 +1,8 @@
+require('dotenv').config();
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
+const mongodbURI = process.env.MONGODB_URI;
 
 // const userRoutes = require('./routes/userRoutes');
 const petRoutes = require('./routes/petRoutes');
@@ -17,7 +19,7 @@ app.use(express.urlencoded({
 // app.use('/user', userRoutes);
 app.use('/pet', petRoutes);
 
-mongoose.connect("mongodb+srv://admin:admin123@cluster0.qnql0.mongodb.net/pet-tracker?retryWrites=true&w=majority", {
+mongoose.connect(mongodbURI, {
 	useNewUrlParser: true,
 	useUnifiedTopology: true
 }) 

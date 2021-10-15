@@ -7,8 +7,6 @@ const upload = multer({
     dest: 'uploads/'
 })
 
-
-
 router.post("/", upload.single('image'), async (req, res) => {
     let token = auth.decode(req.headers.authorization)
 

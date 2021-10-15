@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 const mongodbURI = process.env.MONGODB_URI;
 
-// const userRoutes = require('./routes/userRoutes');
+const userRoutes = require('./routes/userRoutes');
 const petRoutes = require('./routes/petRoutes');
 
 const app = express();
@@ -16,7 +16,7 @@ app.use(express.urlencoded({
     extended: true
 }));
 
-// app.use('/user', userRoutes);
+app.use('/user', userRoutes);
 app.use('/pet', petRoutes);
 
 mongoose.connect(mongodbURI, {

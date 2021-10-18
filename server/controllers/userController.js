@@ -33,3 +33,26 @@ module.exports.registerUser = (body) => {
         }
     })
 }
+
+module.exports.loginUser = (body) => {
+    return User.findOne({email: body.email}).then(result => {
+        if(result === null){
+            return false;
+        }else{
+            const isPasswordCorrect = bcrypt.compareSync(body.password, result.password)
+
+            if(isPasswordCorrect){
+                return {access: auth.createAccessToken(result.toObject())};
+            }else{
+                return false;
+            }
+        }
+    })
+}
+
+module.exports.getProfile = (userId) => {
+    return User.findById(userId).then(result => {
+        result.password = undefined;
+        return result;
+    })
+}

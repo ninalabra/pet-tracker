@@ -1,2 +1,13 @@
+@import url('https://use.typekit.net/ecn0vjp.css');
+
+
 $primary-color: #5271ff;
 $secondary-color: #ff5757;
+
+@mixin brand-font($font-name, $weight: normal, $style: normal){
+    font-family: chuck, sans-serif;
+    src: url('https://use.typekit.net/ecn0vjp.css');
+    font-weight: $weight;
+    font-style: $style;
+}
+

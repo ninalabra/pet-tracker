@@ -1,5 +1,6 @@
 // import  { useState } from 'react';
-import { Card, ListGroup, ListGroupItem, Container, Row, Col, Button } from 'react-bootstrap';
+import { Card, ListGroup, ListGroupItem, Container, Row, Col } from 'react-bootstrap';
+import Button from '@mui/material/Button';
 import '../App.scss';
 import NumberFormat from 'react-number-format';
 
@@ -27,7 +28,7 @@ export default function PricingCards() {
                             <ListGroupItem>Access to tips and advice</ListGroupItem>
                         </ListGroup>
                         <Card.Body className="card-footer">
-                            <Button className="btn btn-block" href="#">Choose</Button>
+                            <Button variant="contained" className="btn btn-block" href="#">Choose</Button>
                         </Card.Body>
                     </Card>
                 </Col>
@@ -51,7 +52,7 @@ export default function PricingCards() {
                             <ListGroupItem>Chat-support with licensed veterinarians</ListGroupItem>
                         </ListGroup>
                         <Card.Body>
-                            <Button className="btn btn-block" href="#">Choose</Button>
+                            <Button variant="contained" className="btn btn-block" href="#">Choose</Button>
                         </Card.Body>
                     </Card>
                 </Col>
@@ -75,7 +76,7 @@ export default function PricingCards() {
                             <ListGroupItem>Chat-support with licensed veterinarians</ListGroupItem>
                         </ListGroup>
                         <Card.Body>
-                            <Button className="btn btn-block" href="#">Choose</Button>
+                            <Button variant="contained" className="btn btn-block" href="#">Choose</Button>
                         </Card.Body>
                     </Card>
                 </Col>

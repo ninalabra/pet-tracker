@@ -70,13 +70,52 @@
   }
 }
 
+#login-modal-register-opt {
+  text-align: center;
+  font-size: 0.75rem;
+  margin: 0em;
+  padding: 0em;
+}
+
+#login-modal-forgotpass {
+  font-size: 0.75rem;
+  display: flex;
+  justify-content: flex-end;
+  text-align: right;
+  padding-right: 0em;
+}
+
 .banner {
-  height: 35vh;
+  height: 60vh;
   margin-top: 3rem;
+
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  justify-content: right;
   text-align: center center;
+  background-color: white;
+}
+
+#banner-pic {
+  display: flex;
+  margin-left: 10vw;
+  justify-content: right;
+  position: absolute;
+  height: 40vh;
+}
+
+#banner-title {
+  display: flex;
+  margin-top: 8rem;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-left: 0em;
+
+  h1 {
+    font-size: 5vh;
+  }
+
 }
 
 .feature-description {

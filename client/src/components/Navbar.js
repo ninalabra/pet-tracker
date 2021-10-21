@@ -37,7 +37,7 @@ export default function NavBar() {
                 </Nav>
             </Navbar.Collapse>
             
-            <LoginModal show={modalShow} onHide={() => setModalShow(false)}/>        
+            <LoginModal sm={12} xs={12} show={modalShow} onHide={() => setModalShow(false)}/>        
         </Navbar>
 
         

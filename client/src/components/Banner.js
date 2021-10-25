@@ -1,26 +1,22 @@
-import { Jumbotron, Container, Row, Col, Image, Button } from 'react-bootstrap';
-import bannerPic from '../images/banner.svg';
+import { Jumbotron, Container, Row, Col, Image } from 'react-bootstrap';
+import bannerPic from '../images/5.png';
 
 export default function Banner({BannerProp}) {
-    const { title, subheader } = BannerProp;
+    const { title } = BannerProp;
 
     return(
-        <Jumbotron className="banner text-center">
+        <Jumbotron className="banner">
             <Container>
                 <Row>
-                    <Col className="ml-5" id="banner-title" fluid>
+                    <Col id="banner-title">
                         <Row>
                             <h1>{title}</h1>
                         </Row>
-                        <Row>
-                            <h6>{subheader}</h6>
-                        </Row>
-                        <Row className="mt-3">
-                            <Button>Learn More</Button>
-                        </Row>
                     </Col>
-                    <Col>
-                        <Image 
+                    <Col sm={12} md={6} lg={6}>
+                        <Image
+                        width={400}
+                        height={400} 
                         src={bannerPic}
                         id="banner-pic"
                         />

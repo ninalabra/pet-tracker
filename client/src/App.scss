@@ -52,7 +52,7 @@
 
 .navbar {
   width: 100vw;
-  background-color: #fff;
+  background: transparent;
 }
 
 #navbar-brand {
@@ -86,10 +86,22 @@
 }
 
 .banner {
-  height: 60vh;
-  margin-top: 3rem;
+  @media(min-width: 768px){
+    background-image: url('./images/banner-background.svg');
+    background-repeat: no-repeat;
+    // background-size: 80%;
+    // height: 85vh;
+  }
 
-  overflow: hidden;
+  @media(max-width: 500px){
+    background-image: url('./images/phone-banner-bg.png');
+    background-repeat: no-repeat;
+    background-size: 120%;
+  }
+  
+  // height: 50vh;
+  // margin-top: 3rem;
+  // margin-right: 3rem;
   display: flex;
   flex-direction: column;
   justify-content: right;
@@ -98,22 +110,37 @@
 }
 
 #banner-pic {
-  display: flex;
-  margin-left: 10vw;
+  margin-top: 2rem;
   justify-content: right;
-  position: absolute;
-  height: 40vh;
+  height: 100%;
+  width: 100%;
+  
 }
 
 #banner-title {
-  display: flex;
-  margin-top: 8rem;
-  flex-direction: column;
-  justify-content: flex-start;
-  padding-left: 0em;
+  @media(max-width: 500px){
+    margin-top: 5rem;
+    padding-right: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  @media(min-width: 768px){
+    margin-top: 5rem;
+    margin-bottom: 0em;
+    font-size: 10vh;
+    // display: flex;
+  }
+
 
   h1 {
     font-size: 5vh;
+    font-family: ruddy, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: whitesmoke;
   }
 
 }
